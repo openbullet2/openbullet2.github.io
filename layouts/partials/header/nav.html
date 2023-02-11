@@ -1,6 +1,9 @@
 <nav>
+	
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
 	<a class="editor-link btn" href="cloudcannon:collections/data/" class="btn"><strong>&#9998;</strong> Edit navigation</a>
+	
+	
 	{{ if .Site.Menus.main }}
 		{{ $currentPage := . }}
 		{{ range .Site.Menus.main }}
@@ -17,3 +20,4 @@
 		{{ end }}
 	{{ end }}
 </nav>
+

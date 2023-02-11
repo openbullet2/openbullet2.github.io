@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Hydra Template"
+title = "free"
 disqusShortname = ""
 googleAnalytics = ""
 Paginate = 10
@@ -19,17 +19,17 @@ unsafe = true
 [menu]
 
 [[menu.main]]
-identifier = "login"
-name = "login"
-url = "/"
+identifier = "github"
+name = "Github"
+url = "https://github.com/openbullet/OpenBullet2"
 weight = 110
 [menu.main.params]
   new_window = true
 
 [[menu.main]]
-identifier = "signup"
-name = "Sign Up"
-url = "/"
+identifier = "forum"
+name = "Forum"
+url = "https://discourse.openbullet.dev"
 weight = 111
 [menu.main.params]
   new_window = true

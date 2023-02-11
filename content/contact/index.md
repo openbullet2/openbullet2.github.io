@@ -2,7 +2,8 @@
 title: Contact
 full_width: true
 heading: Get in touch today
-description: We'd love to help you improve your sales.
+description: "The best way to contact me is through the official forum(https://discourse.openbullet.dev/u/Ruri).
+ I'm not on discord / telegram. If you need to contact me via mail for any reason you can send me a message here ruri [at] openbullet (dot) dev. I don't check it very often so be patient please."
 type: contact
 
 menu:
@@ -11,11 +12,6 @@ menu:
   footer:
     weight: 4
 
-map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
 
 _enabled_editors:
   - visual

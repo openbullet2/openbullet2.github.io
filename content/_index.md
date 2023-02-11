@@ -1,6 +1,6 @@
 ---
-title: "The last sales CRM you'll ever need"
-description: Track and optimize your sales team in real time.
+title: "Open Bullet 2"
+description: Cross platform automation suite.
 type: bannerless
 
 _enabled_editors:

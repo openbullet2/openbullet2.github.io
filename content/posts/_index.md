@@ -1,7 +1,7 @@
 ---
-title: Blog
-description: Keep up with the latest news.
-url: /blog/
+title: Guides
+description: Here you will find useful guides for deploying, using and modifying OpenBullet.
+type: blog
 
 menu:
   main:

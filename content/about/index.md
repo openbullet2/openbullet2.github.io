@@ -1,6 +1,6 @@
 ---
 title: Our team
-description: We've built an amazing team of developers, marketers, designers and sales people.
+description: 'In the event of a critical issue or urgent matter affecting this site, please contact us at https://github.com/openbullet2'
 type: about
 
 menu:

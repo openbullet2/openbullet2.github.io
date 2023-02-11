@@ -2,11 +2,11 @@
 <main>
     <section class="hero">
 		<div class="text-container">
-			<h1 class="editable">The last sales CRM <strong>you'll ever need</strong></h1>
-			<p class="subtext editable">Track and optimize your sales team in real time.</p>
-			<div class="cta button alt"><a href={{ "/sign-up/" | relURL }}>Get Started Free</a></div>
+			<h1 class="editable">Open Bullet <strong>2</strong></h1>
+			<p class="subtext editable">Cross platform automation suite powered by .NET core.</p>
+			<div class="cta button alt"><a id="main_download_button" href={{ "/downloads/" | relURL }}>Download</a></div>
 			<div>
-				<img src="image/dashboard.png" alt="Screenshot" class="screenshot editable" />
+				<img src="/image/soft1.png" alt="Screenshot" class="screenshot editable" />
 			</div>
 		</div>
 	</section>
@@ -15,11 +15,11 @@
 		<section>
 			<div class="container flex">
 				<div class="text editable">
-					<h2>How can we <strong>double</strong> our sales revenue?</h2>
-					<p>Hydra learns your business. By analyzing your sales data, Hydra optimizes your sales process and show you where you should be spending your resources. </p>
+					<h2>How it works?</h2>
+					<p>It allows to perform requests towards a target webapp and offers a lot of tools to work with the results. This software can be used for scraping and parsing data, automated pentesting and much more.</p>
 				</div>
 				<div class="image">
-					<img src="image/dashboard.png" alt="Screenshot" class="screenshot editable" />
+					<img src="/image/screen1.png" alt="Screenshot" class="screenshot editable" />
 				</div>
 			</div>
 		</section>
@@ -27,11 +27,16 @@
 		<section>
 			<div class="container flex">
 				<div class="text editable">
-					<h2>How can I <strong>keep track</strong> of my sales team?</h2>
-					<p>Hydra learns your business. By analyzing your sales data, Hydra optimizes your sales process and show you where you should be spending your resources.</p>
+					<h2>System requirements</h2>
+					<p><b>OS</b>: Windows 7-11, Linux<br>
+						<b>Cpu</b>: 2 cores<br>
+						<b>Ram</b>: 2GB<br>
+						<b>Disc space</b>: 10GB<br>
+						<b>Install</b>: <a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0">.Net 6 runtime</a>, <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">VC Redist 2015–2022 x64(for windows)</a>
+					</p>
 				</div>
 				<div class="image">
-					<img src="image/dashboard.png" alt="Screenshot" class="screenshot editable" />
+					<img src="/image/soft3.jpg" alt="Screenshot" class="screenshot editable" />
 				</div>
 			</div>
 		</section>
@@ -39,11 +44,15 @@
 		<section>
 			<div class="container flex">
 				<div class="text editable">
-					<h2>How can I <strong>forecast</strong> the next 90 days?</h2>
-					<p>Hydra learns your business. By analyzing your sales data, Hydra optimizes your sales process and show you where you should be spending your resources.</p>
+					<h2>Donate</h2>
+					<p>If you like this software, consider making a donation to the developer. Thank you!<br>
+						<b>BTC</b>: <font size="4">39yMkox6pP8tnSC7rZ5EM4nUUHgPbg1fKM</font><br>
+						<b>ETH</b>: <font size="4">0xc22116Bcf6c30977bEdFcc03C5B6aAe90B0fD179</font><br>
+						<b>BCH</b>: <font size="4">qq02mrtdp454g2zdu534ndpu7jgcr3tvavyzs60m3p</font>
+					</p>
 				</div>
 				<div class="image">
-					<img src="image/dashboard.png" alt="Screenshot" class="screenshot editable" />
+					<img src="/image/screen1.png" alt="Screenshot" class="screenshot editable" />
 				</div>
 			</div>
 		</section>
@@ -51,20 +60,43 @@
 		<section class="testimonial">
 			<div class="container flex">
 				<div class="testimonial-block">
-					<div class="square-image"><img src="https://source.unsplash.com/6anudmpILw4/600x400" alt="Jim James" class="editable"></div>
+					<div class="square-image"><img src="/image/favicon2.jpg" alt="Ruri" class="editable"></div>
 					<blockquote>
-						<p class="editable">Hydra has shaped the business we have today. We have a repeatable sales process and a strategy to scale our team. I recommend Hydra to any business looking to improve their sales.</p>
-						<p class="editable author">Jim James - CEO of Global Corp.</p>
+						<p>Ruri - Creator of OpenBullet</p>
+						<p class="editable author">Performing (D)DoS attacks or credential stuffing on sites you do not own  (or you do not have permission to test) is illegal! The developer will not be held responsible for improper use of this software.</p>
 					</blockquote>
 				</div>
 			</div>
 		</section>
 	
 		<section class="bottom-cta">
-			<h2 class="editable"><strong>Improve</strong> your sales process today</h2>
-			<div class="button alt"><a href="#">Get Started Free</a></div>
+			<h2 class="editable">This website is open sourse too!</h2>
+			<div class="button alt"><a href="https://github.com/openbullet2/openbullet2.github.io">Github website</a></div>
 		</section>
 	</div>
 
 </main>
+<script>
+	function get_os(){
+		let platform = navigator.platform;
+		if (platform.includes("Linux")){
+			return "lin"
+		} else if (platform.includes("Windows")){
+			return "win"
+		} else if (platform.includes("Mac OS X")){
+			return "mac"
+		} else {
+			return "???"
+		}
+	}
+	links = {"win":"https://github.com/openbullet/OpenBullet2/releases/latest/download/OpenBullet2.Native.zip",
+		"lin":"https://github.com/openbullet/OpenBullet2/releases/latest/download/OpenBullet2.zip",
+		"mac":"https://github.com/openbullet/OpenBullet2/releases/latest/download/OpenBullet2.zip",
+		"???":"/downloads/"
+	}
+	os = get_os();
+	console.log(os,links[os]);
+	var link = document.getElementById("main_download_button");
+	link.setAttribute("href", links[os]);
+</script>
 {{ end }}

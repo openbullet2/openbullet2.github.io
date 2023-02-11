@@ -6,7 +6,7 @@
 				<h3>{{ .name }}</h3>
 			</li>
 			{{ range .features }}
-				<li {{ with .highlight }} class="highlighted"{{ end }}>{{ .text }}</li>
+				<li {{ with .highlight }} class="highlighted"{{ end }}>{{ .text | markdownify}}</li>
 			{{ end }}
 
 			{{ if .call_to_action }}
@@ -17,7 +17,7 @@
 </div>
 
 {{ with .Params.faq }}
-	<h2>Pricing FAQ</h2>
+	<h2>FAQ</h2>
 	<dl class="faq">
 		{{ range . }}
 			<div>
